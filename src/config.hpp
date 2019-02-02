@@ -18,7 +18,7 @@ const bool USE_MOUSE = true;
 // color settings
 const bool tryColors = true;
 
-const int TITLE_FOREGROUND = COLOR_BLUE;
+const int TITLE_FOREGROUND = COLOR_CYAN;
 const int TITLE_BACKGROUND = -1;
 const int TITLE_COLOR_PAIR = 1;
 
@@ -26,11 +26,11 @@ const int GUTTER_FOREGROUND = COLOR_GREEN;
 const int GUTTER_BACKGROUND = -1;
 const int GUTTER_COLOR_PAIR = 2;
 
-const int SELECT_FOREGROUND = COLOR_CYAN;
+const int SELECT_FOREGROUND = COLOR_GREEN;
 const int SELECT_BACKGROUND = -1;
 const int SELECT_COLOR_PAIR = 3;
 
-const int BORDER_FOREGROUND = COLOR_BLUE;
+const int BORDER_FOREGROUND = COLOR_CYAN;
 const int BORDER_BACKGROUND = -1;
 const int BORDER_COLOR_PAIR = 4;
 
@@ -44,8 +44,8 @@ const int MARK_COLOR_PAIR_DONE = 6;
 
 // various settings for how the to-do list is displayed
 const bool showNumbers = true;
-const bool zeroIndexNumbers = true;
-const bool highlightWholeLine = true;
+const bool zeroIndexNumbers = false;
+const bool highlightWholeLine = false;
 const std::string STRING_NOT_COMPLETE = "[ ]";
 const std::string STRING_COMPLETE = "[x]";
 
@@ -86,8 +86,8 @@ const int UNDO_KEY = 'u';
 const int DIV_KEY = 'z';
 
 // settings related to saving
-const std::string saveDirectory = ".todo";
-const std::string extension = ".todo";
+const std::string saveDirectory = "todolists";
+const std::string extension = ".todolist";
 const bool autoSave = true;
 
 #endif

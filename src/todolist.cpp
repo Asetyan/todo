@@ -188,7 +188,8 @@ bool TodoList::swap(unsigned pos)
 // return the save directory
 string TodoList::getSaveDir()
 {
-    return string(getenv("HOME"))+"/"+saveDirectory;
+    //return string(getenv("HOME"))+"/"+saveDirectory;
+    return "./"+saveDirectory;
 }
 
 ///////////////////////////
@@ -213,5 +214,6 @@ void TodoList::sort()
 // return the save path for the to-do list
 string TodoList::getPath()
 {
-    return string(getenv("HOME"))+"/"+saveDirectory+"/"+name+extension;
+    //return string(getenv("HOME"))+"/"+saveDirectory+"/"+name+extension;
+    return "./"+saveDirectory+"/"+name+extension;
 }
